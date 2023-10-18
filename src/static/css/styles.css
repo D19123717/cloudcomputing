@@ -16,6 +16,7 @@ body {
 
 .item:hover {
     box-shadow: 0 0 1em #aaa;
+    border: 1px solid #555;
 }
 
 .item.completed {
@@ -23,15 +24,36 @@ body {
 }
 
 .toggles {
-    color: black;
+
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+.toggles:hover, .toggles:active {
+    background-color: #555;
 }
 
 .name {
     padding-top: 3px;
 }
 
+.name:hover {
+    text-decoration: underline;
+}
+
 .remove {
     padding-left: 0;
+    color: red;
+}
+
+.remove:hover {
+    color: darkred;
+    transition: color 0.3s ease;
 }
 
 button:focus {
