@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(45deg, #ff6b6b, #556270, #ff6b6b);
+    background-size: 100% 100%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.item {
+    background-color:  #d3d3d3;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #ccc;
+    transition: all .2s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 1em #aaa;
+
+}
+
+.item.completed {
+    text-decoration: line-through;
+}
+
+.toggles {
+
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+.toggles:hover, .toggles:active {
+    background-color: #555;
+}
+
+.name {
+    padding-top: 3px;
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+
+.remove {
+    padding-left: 0;
+    color: red;
+}
+
+.remove:hover {
+    color: darkred;
+    transition: color 0.3s ease;
+}
+
+button:focus {
+    border: 1px solid #333;
+}
